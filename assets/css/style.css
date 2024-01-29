@@ -1,0 +1,190 @@
+@import url('./reset.css');
+
+* {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/*mobile first*/
+header .nav-links {
+    display: none;
+}
+
+
+header .nav-links a {
+    color: #222;
+}
+
+header {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* align-items: center; */
+    align-items: center;
+}
+
+
+
+/* intro hissesi basladi */
+.introduction h1 span {
+    color: #ff8a56;
+}
+
+
+.introduction .intro-left-side h1{
+   margin-top: 20px;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+  
+}
+.introduction .intro-left-side p {
+ color: #666;
+font-family: Roboto;
+font-size: 22px;
+font-weight: 400;
+line-height: 33px; 
+padding: 40px;;
+}
+ 
+
+
+
+.introduction .intro-right-side img{
+    width: 300px;;
+}
+.introduction .intro-right-side img{
+    width: 100%;
+}
+
+
+.partner-shirketler h6{
+    text-align: center;
+    padding: 20px;
+}
+
+.shirketler img:not(:last-child){
+    display: none;
+}
+.shirketler img:last-child{
+    margin-left: 100px;
+}
+.services h1{
+    font-size: 54px;
+    font-weight: 700px;
+text-align: center;
+color: #000;
+}
+.services h6{
+    text-align: center;
+    margin-top: 40px;
+    color: #ff8a56;
+    font-weight: 700;
+   font-size: 22px;
+
+}
+.card h2 {
+    color: #000;
+    font-size: 24px;
+font-weight: 700;
+}
+.card p{
+    color: #666;
+font-size: 16px;
+font-weight: 400;
+}
+ul{
+    list-style-type:square;
+}
+.cards-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    flex: 1 0 306px;
+    /* box-shadow: 10px 10px 40px rgba(0,0,0,.2); */
+border-radius: 10px;
+}
+
+
+.projects-left-side h5{
+    color: #B16CEA;
+font-size: 22px;
+font-weight: 700;
+padding-left: 15px;
+}
+.projects-left-side p{
+    color: #000;
+
+font-size: 54px;
+font-weight: 700;
+text-align: left;
+}
+
+/* media sorgulari */
+@media(min-width:768px) {
+    .fa-burger {
+        display: none;
+    }
+
+
+    header {
+        padding: 30px 55px;
+    }
+
+    header .nav-links {
+        display: flex;
+        gap: 10px;
+    }
+   
+    .introduction{
+        display: flex;
+    }
+    .introduction .intro-right-side {
+        width: 700px;
+    }
+    .introduction .intro-left-side h1{
+        font-size: 57px;
+        font-weight: 800px;
+    }
+    .shirketler{
+        display: flex;
+        justify-content: space-around;
+    }
+    .shirketler img:nth-child(3){
+        display: block;
+    }
+    .services h1{
+        font-size: 54px;
+        width: 700px;
+        margin: 40px auto;
+    }
+}
+
+
+
+
+@media(min-width:1080px) {
+    header {
+        padding: 20px 112px;
+        
+    }
+    .introduction .intro-left-side h1{
+        font-size: 72px;
+        width: 705px;
+    }
+    .introduction .intro-left-side{
+        padding-top: 92px;
+    }
+    .shirketler img {
+        display: flex !important;
+    }
+}
